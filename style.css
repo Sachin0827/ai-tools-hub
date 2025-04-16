@@ -1,4 +1,4 @@
-/* ========== Fluid Animated Background ========== */
+/* Fluid Animated Background */
 .bg-animated {
   position: fixed;
   inset: 0;
@@ -8,7 +8,6 @@
   overflow: hidden;
   background: #f8fafc;
 }
-
 .blob {
   position: absolute;
   border-radius: 50%;
@@ -19,50 +18,40 @@
   pointer-events: none;
 }
 .blob1 {
-  width: 70vw;
-  height: 70vw;
-  left: -20vw;
-  top: -20vw;
+  width: 70vw; height: 70vw; left: -20vw; top: -20vw;
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   animation: blobFloat1 24s ease-in-out infinite;
 }
 .blob2 {
-  width: 80vw;
-  height: 80vw;
-  right: -30vw;
-  bottom: -30vw;
+  width: 80vw; height: 80vw; right: -30vw; bottom: -30vw;
   background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
   animation: blobFloat2 28s ease-in-out infinite;
 }
 .blob3 {
-  width: 60vw;
-  height: 60vw;
-  left: 35vw;
-  top: 40vh;
+  width: 60vw; height: 60vw; left: 35vw; top: 40vh;
   background: linear-gradient(120deg, #f9ea8f 0%, #aff1da 100%);
   opacity: 0.35;
   animation: blobFloat3 32s ease-in-out infinite;
 }
-
 @keyframes blobFloat1 {
-  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg);}
-  25% { transform: translate(10vw, 10vh) scale(1.12) rotate(8deg);}
-  50% { transform: translate(15vw, 5vh) scale(0.93) rotate(15deg);}
-  75% { transform: translate(5vw, 15vh) scale(1.07) rotate(7deg);}
+  0%,100%{transform:translate(0,0) scale(1) rotate(0deg);}
+  25%{transform:translate(10vw,10vh) scale(1.12) rotate(8deg);}
+  50%{transform:translate(15vw,5vh) scale(0.93) rotate(15deg);}
+  75%{transform:translate(5vw,15vh) scale(1.07) rotate(7deg);}
 }
 @keyframes blobFloat2 {
-  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg);}
-  25% { transform: translate(-10vw, -10vh) scale(1.1) rotate(-8deg);}
-  50% { transform: translate(-15vw, -5vh) scale(0.91) rotate(-13deg);}
-  75% { transform: translate(-5vw, -15vh) scale(1.04) rotate(-7deg);}
+  0%,100%{transform:translate(0,0) scale(1) rotate(0deg);}
+  25%{transform:translate(-10vw,-10vh) scale(1.1) rotate(-8deg);}
+  50%{transform:translate(-15vw,-5vh) scale(0.91) rotate(-13deg);}
+  75%{transform:translate(-5vw,-15vh) scale(1.04) rotate(-7deg);}
 }
 @keyframes blobFloat3 {
-  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg);}
-  33% { transform: translate(-10vw, 6vh) scale(1.08) rotate(-10deg);}
-  66% { transform: translate(8vw, -10vh) scale(0.92) rotate(10deg);}
+  0%,100%{transform:translate(0,0) scale(1) rotate(0deg);}
+  33%{transform:translate(-10vw,6vh) scale(1.08) rotate(-10deg);}
+  66%{transform:translate(8vw,-10vh) scale(0.92) rotate(10deg);}
 }
 
-/* ========== Layout & Typography ========== */
+/* Layout & Typography */
 body, html {
   margin: 0;
   padding: 0;
@@ -116,7 +105,7 @@ input[type="search"]:focus {
   background: #fff;
 }
 
-/* ========== Tabs ========== */
+/* Tabs */
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -149,7 +138,7 @@ input[type="search"]:focus {
   transform: translateY(-2px) scale(1.04);
 }
 
-/* ========== Tools Grid & Cards ========== */
+/* Tools Grid & Cards */
 .tools-grid {
   display: grid;
   gap: 2.1rem;
@@ -232,7 +221,7 @@ input[type="search"]:focus {
   text-decoration: underline;
 }
 
-/* ========== Footer ========== */
+/* Footer */
 footer {
   text-align: center;
   color: #64748b;
@@ -251,7 +240,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ========== Responsive ========== */
+/* Responsive */
 @media (max-width: 700px) {
   .tools-grid {
     grid-template-columns: 1fr;

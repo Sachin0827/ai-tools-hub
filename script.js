@@ -42,20 +42,15 @@ const tools = [
   { name: "SEMRush", logo: "https://www.semrush.com/favicon.ico", description: "All-in-one SEO toolkit.", category: "SEO", link: "https://www.semrush.com/" },
   { name: "Surfer SEO", logo: "https://surferseo.com/favicon.ico", description: "AI-powered SEO content optimization.", category: "SEO", link: "https://surferseo.com/" },
   { name: "Ahrefs", logo: "https://ahrefs.com/favicon.ico", description: "SEO analysis and backlink checker.", category: "SEO", link: "https://ahrefs.com/" },
-
-  // Add more tools and categories as you wish!
 ];
 
-// Extract categories
 const categories = ["All", ...Array.from(new Set(tools.map(t => t.category)))];
 
-// DOM Elements
 const searchInput = document.getElementById("search");
 const toolsGrid = document.getElementById("toolsGrid");
 const tabs = document.getElementById("tabs");
 let selectedCategory = "All";
 
-// Render Tabs
 function renderTabs() {
   tabs.innerHTML = "";
   categories.forEach(category => {
@@ -71,7 +66,6 @@ function renderTabs() {
   });
 }
 
-// Advanced staggered animation for cards
 function animateCards() {
   const cards = document.querySelectorAll('.card');
   cards.forEach((card, i) => {
@@ -80,7 +74,6 @@ function animateCards() {
   });
 }
 
-// Render Tools
 function renderTools() {
   const searchText = searchInput.value.toLowerCase();
   toolsGrid.innerHTML = "";
@@ -107,9 +100,7 @@ function renderTools() {
   animateCards();
 }
 
-// Search Event
 searchInput.addEventListener("input", renderTools);
 
-// Initial Render
 renderTabs();
 renderTools();
