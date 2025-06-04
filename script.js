@@ -42,6 +42,24 @@ const tools = [
   { name: "SEMRush", logo: "https://www.semrush.com/favicon.ico", description: "All-in-one SEO toolkit.", category: "SEO", link: "https://www.semrush.com/" },
   { name: "Surfer SEO", logo: "https://surferseo.com/favicon.ico", description: "AI-powered SEO content optimization.", category: "SEO", link: "https://surferseo.com/" },
   { name: "Ahrefs", logo: "https://ahrefs.com/favicon.ico", description: "SEO analysis and backlink checker.", category: "SEO", link: "https://ahrefs.com/" },
+
+  // Image Generation
+  { name: "DALL·E 3", logo: "https://openai.com/favicon.ico", description: "Generate images from text prompts.", category: "Image Generation", link: "https://openai.com/dall-e-3" },
+  { name: "Midjourney", logo: "https://www.midjourney.com/favicon.ico", description: "AI-based art generator.", category: "Image Generation", link: "https://www.midjourney.com/" },
+  { name: "Stable Diffusion", logo: "https://stability.ai/favicon.ico", description: "Open-source image synthesis model.", category: "Image Generation", link: "https://stability.ai/" },
+  { name: "Adobe Firefly", logo: "https://firefly.adobe.com/favicon.ico", description: "Creative generative AI by Adobe.", category: "Image Generation", link: "https://firefly.adobe.com/" },
+
+  // Audio
+  { name: "ElevenLabs", logo: "https://elevenlabs.io/favicon.ico", description: "Realistic text-to-speech voices.", category: "Audio", link: "https://elevenlabs.io/" },
+  { name: "AIVA", logo: "https://www.aiva.ai/favicon.ico", description: "AI composer for music.", category: "Audio", link: "https://www.aiva.ai/" },
+  { name: "Voice.ai", logo: "https://voice.ai/favicon.ico", description: "AI voice changer and cloning.", category: "Audio", link: "https://voice.ai/" },
+  { name: "Descript", logo: "https://www.descript.com/favicon.ico", description: "AI audio & video editing.", category: "Audio", link: "https://www.descript.com/" },
+
+  // Code Generation
+  { name: "GitHub Copilot", logo: "https://github.com/favicon.ico", description: "AI pair programmer for code completion.", category: "Code Generation", link: "https://github.com/features/copilot" },
+  { name: "Codeium", logo: "https://www.codeium.com/favicon.ico", description: "Free AI code assistant.", category: "Code Generation", link: "https://www.codeium.com/" },
+  { name: "Replit AI", logo: "https://replit.com/public/images/favicon-192.png", description: "AI for code suggestions and chat.", category: "Code Generation", link: "https://replit.com/ai" },
+  { name: "Tabnine", logo: "https://www.tabnine.com/favicon.ico", description: "AI-powered code completions.", category: "Code Generation", link: "https://www.tabnine.com/" },
 ];
 
 const categories = ["All", ...Array.from(new Set(tools.map(t => t.category)))];
